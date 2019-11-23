@@ -39,6 +39,6 @@ protected:
 	std::vector<std::string>	mySmallTalk;	//populated by populatePhrases in derived classes
 	int							iPerson;		//what number this person is (just a way to track objects)
 	int 						current_phrase;	//which phrase was last returned (use % operator to cycle through phrases)
-	std::unique_ptr<Watch> pWatch;		//if 0 don't have a watch, otherwise does have a watch
+	std::unique_ptr<Watch>		pWatch;			//if 0 don't have a watch, otherwise does have a watch
 };
 

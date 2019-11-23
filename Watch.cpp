@@ -6,6 +6,7 @@
  */
 #include <ctime>
 #include "./includes/Watch.h"
+#include <iostream>
 
 Watch::Watch() {
 }
@@ -14,6 +15,7 @@ Watch::~Watch() {
 }
 
 std::string Watch::getTime() {
+//	std::cout << "\n\nIn getTime()\n\n";
 	const int CONVERT_TO_12_HOUR = 12;
 	time_t rawtime;
 	struct tm * timeinfo;
